@@ -121,3 +121,30 @@ img {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
+
+/*Sobre Nosotros*/
+@media (min-width: 1035px) {
+  .about-us {
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1035px) {
+  .about-us {
+    padding-top: 5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.about-us div {
+  background-color: var(--main-color);
+  padding: 2rem;
+}
+
+.about-us img {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
