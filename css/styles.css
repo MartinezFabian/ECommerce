@@ -1,0 +1,55 @@
+/* hace que todos los elementos que se encuentren dentro de las etiquetas 
+   <html></html> hereden la propiedad box-sizing: border-box; 
+   asignada en el elemento padre (<html></html>) */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Estilos Globales */
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  max-width: 900px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+
+/* header y nav principal */
+.site-name {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.site-name span {
+  color: #9e6b67;
+}
+
+.main-nav-container {
+  border-top: 1px solid #dedede;
+}
+
+.main-nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hero {
+  background-image: url(../img/principal.jpg);
+  height: 550px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
