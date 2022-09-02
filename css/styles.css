@@ -22,20 +22,26 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
+  line-height: 2;
 }
 
 h1,
 h2,
 h3 {
   font-family: "Playfair Display", serif;
+  margin: 0 0 5rem 0;
+}
+
+h1 {
+  font-size: 5rem;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 a {
@@ -57,8 +63,6 @@ img {
 .site-name {
   text-align: center;
   margin-top: 5rem;
-  margin-bottom: 5rem;
-  font-size: 4rem;
 }
 
 .site-name span {
@@ -82,10 +86,14 @@ img {
   height: 55rem;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
 }
 
 /*Lista de categorias*/
+.categories {
+  padding-top: 5rem;
+}
+
 .categories h2 {
   text-align: center;
 }
