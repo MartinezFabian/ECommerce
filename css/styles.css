@@ -12,6 +12,11 @@ html {
   box-sizing: inherit;
 }
 
+/* Variables */
+:root {
+  --main-color: #b88b5c;
+}
+
 /* Estilos Globales */
 a {
   text-decoration: none;
@@ -20,10 +25,12 @@ a {
 
 .container {
   max-width: 900px;
-  margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto;
+  margin: 0 auto 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 /* header y nav principal */
@@ -34,7 +41,7 @@ a {
 }
 
 .site-name span {
-  color: #9e6b67;
+  color: var(--main-color);
 }
 
 .main-nav-container {
@@ -44,6 +51,9 @@ a {
 .main-nav {
   padding-top: 20px;
   padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .hero {
@@ -52,4 +62,33 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+/*Lista de categorias*/
+.categories h2 {
+  text-align: center;
+}
+
+.categories-list img {
+  height: 200px;
+}
+
+.categories-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.category a {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.category a:hover {
+  color: #ffffff;
+  background-color: var(--main-color);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
