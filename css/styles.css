@@ -15,7 +15,7 @@ html {
 
 /* Variables */
 :root {
-  --main-color: #b88b5c;
+  --main-color: #786a12;
 }
 
 /* Estilos Globales */
@@ -59,6 +59,25 @@ img {
   display: block;
 }
 
+.btn {
+  display: block;
+  background-color: #f7db25;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 1rem;
+  transition: background-color 0.3s ease-out;
+}
+
+.btn:hover {
+  background-color: #e0c516;
+}
+
+/*Utilidades*/
+.center-text {
+  text-align: center;
+}
+
 /* header y nav principal */
 .site-name {
   text-align: center;
@@ -92,10 +111,6 @@ img {
 /*Lista de categorias*/
 .categories {
   padding-top: 5rem;
-}
-
-.categories h2 {
-  text-align: center;
 }
 
 .categories-list img {
@@ -142,9 +157,38 @@ img {
 .about-us div {
   background-color: var(--main-color);
   padding: 2rem;
+  color: #fff;
 }
 
 .about-us img {
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/*Nuestros Productos*/
+.main-content {
+  padding-top: 5rem;
+}
+
+.products-lis {
+}
+
+.product {
+  background-color: var(--main-color);
+  margin-bottom: 2rem;
+}
+
+.product-text {
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.product-text h3 {
+  margin: 0rem;
+}
+
+.product-text .price {
+  font-size: 2.8rem;
+  font-weight: 900;
 }
