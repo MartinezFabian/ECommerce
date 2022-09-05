@@ -170,7 +170,7 @@ img {
   object-fit: cover;
 }
 
-/*Nuestros Productos*/
+/*Productos*/
 .main-content {
   padding-top: 5rem;
 }
@@ -259,6 +259,17 @@ img {
 
 .product-text p {
   margin: 0 0 0.5rem 0;
+}
+
+.main-content h2 {
+  display: inline;
+}
+
+.main-content .view-all {
+  margin-left: 2rem;
+  color: #db4f30;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 /*footer*/
