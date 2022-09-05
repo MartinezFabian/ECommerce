@@ -291,3 +291,20 @@ img {
   color: var(--main-color);
   font-weight: bold;
 }
+
+/*Pagina Nosotros*/
+.content-about-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  gap: 4rem;
+}
+
+.image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.information-about-us {
+  padding: 2rem;
+}
