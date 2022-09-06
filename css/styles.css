@@ -68,6 +68,7 @@ img {
   padding: 1rem;
   transition: background-color 0.3s ease-out;
   border-radius: 1rem;
+  text-align: center;
 }
 
 .btn:hover {
@@ -77,6 +78,10 @@ img {
 /*Utilidades*/
 .center-text {
   text-align: center;
+}
+
+.max-with-30 {
+  max-width: 30rem;
 }
 
 /* header y nav principal */
@@ -318,4 +323,35 @@ img {
 
 .information-about-us {
   padding: 2rem;
+}
+
+/*Blog*/
+.blog-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+}
+
+.blog-entry {
+  border-bottom: 0.2rem solid #e1e1e1;
+  padding-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.blog-entry h2 {
+  margin-bottom: 2rem;
+}
+
+.blog-entry:last-of-type {
+  border-bottom: none;
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.information span {
+  font-weight: 700;
+  color: var(--main-color);
 }
