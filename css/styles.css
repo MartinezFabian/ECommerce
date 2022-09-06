@@ -355,3 +355,9 @@ img {
   font-weight: 700;
   color: var(--main-color);
 }
+
+/*Post*/
+.post-content {
+  width: 60rem;
+  margin: 0 auto 0 auto;
+}
