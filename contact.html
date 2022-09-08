@@ -38,34 +38,36 @@
           <legend>Tus Datos</legend>
 
           <div class="field">
-            <label>
-              Nombre:
-              <input type="text" placeholder="Tu Nombre" required />
-            </label>
+            <label for="name">Nombre:</label>
+            <input
+              id="name"
+              class="input"
+              type="text"
+              placeholder="Tu Nombre"
+              required
+            />
           </div>
           <div class="field">
-            <label>
-              Asunto:
-              <input type="text" placeholder="Asunto" required />
-            </label>
+            <label for="subject">Asunto:</label>
+            <input id="subject" type="text" placeholder="Asunto" required />
           </div>
           <div class="field">
-            <label>
-              Email:
-              <input type="email" placeholder="Tu email" required />
-            </label>
+            <label for="email">Email:</label>
+            <input
+              id="email"
+              class="input"
+              type="email"
+              placeholder="Tu email"
+              required
+            />
           </div>
           <div class="field">
-            <label>
-              Teléfono:
-              <input type="tel" placeholder="Tu Teléfono" />
-            </label>
+            <label for="phone">Teléfono:</label>
+            <input id="phone" type="tel" placeholder="Tu Teléfono" />
           </div>
           <div class="field">
-            <label>
-              Mensaje:
-              <textarea cols="60" rows="10" required></textarea>
-            </label>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" cols="60" rows="10" required></textarea>
           </div>
         </fieldset>
 
@@ -73,17 +75,15 @@
           <legend>País</legend>
 
           <div class="field">
-            <label>
-              Selecciona tu País:
-              <select>
-                <option value="AR">Argentina</option>
-                <option value="CO">Colombia</option>
-                <option value="CL">Chile</option>
-                <option value="ES">España</option>
-                <option value="MX">México</option>
-                <option value="PR">Perú</option>
-              </select>
-            </label>
+            <label for="country">Selecciona tu País:</label>
+            <select id="country">
+              <option value="AR">Argentina</option>
+              <option value="CO">Colombia</option>
+              <option value="CL">Chile</option>
+              <option value="ES">España</option>
+              <option value="MX">México</option>
+              <option value="PR">Perú</option>
+            </select>
           </div>
         </fieldset>
 
@@ -91,32 +91,26 @@
           <legend>Información Extra</legend>
 
           <div class="field">
-            <label>
-              Cliente
-              <input type="radio" name="type" value="customer" />
-            </label>
+            <label for="customer">Cliente</label>
+            <input id="customer" type="radio" name="type" value="customer" />
           </div>
           <div class="field">
-            <label>
-              Proveedor
-              <input type="radio" name="type" value="provider" />
-            </label>
+            <label for="provider">Proveedor</label>
+            <input id="provider" type="radio" name="type" value="provider" />
           </div>
           <div class="field">
-            <label>
-              Categoría de Interes
-              <input type="text" list="category" />
-              <datalist id="category">
-                <option value="Cocina" />
-                <option value="Oficina" />
-                <option value="Hogar" />
-                <option value="Exterior" />
-              </datalist>
-            </label>
+            <label for="category">Categoría de Interes</label>
+            <input list="category" type="text" list="category" />
+            <datalist id="category">
+              <option value="Cocina" />
+              <option value="Oficina" />
+              <option value="Hogar" />
+              <option value="Exterior" />
+            </datalist>
           </div>
         </fieldset>
 
-        <input type="submit" value="Enviar Formulario" />
+        <input type="submit" value="Enviar Formulario" class="btn" />
       </form>
     </main>
 

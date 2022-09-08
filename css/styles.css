@@ -69,10 +69,12 @@ img {
   transition: background-color 0.3s ease-out;
   border-radius: 1rem;
   text-align: center;
+  border: none;
 }
 
 .btn:hover {
   background-color: #e0c516;
+  cursor: pointer;
 }
 
 /*Utilidades*/
@@ -376,4 +378,46 @@ img {
   width: 100%;
   height: 30rem;
   object-fit: cover;
+}
+
+/*Formulario*/
+
+.form {
+  max-width: 60rem;
+  margin: 0 auto 0 auto;
+}
+
+form fieldset {
+  border-color: gray;
+  border-width: 0.1rem;
+  border-style: solid;
+  margin-bottom: 2.5rem;
+}
+
+form legend {
+  color: #fff;
+  background-color: var(--main-color);
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  padding: 1rem;
+}
+
+.field {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.field label {
+  flex-basis: 10rem;
+}
+
+.field input:not([type="radio"]),
+.field textarea,
+.field select {
+  flex: 1;
+  border: 1px solid #e1e1e1;
+  padding: 1rem;
 }
