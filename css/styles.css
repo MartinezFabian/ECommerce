@@ -186,19 +186,14 @@ img {
 }
 
 /*Sobre Nosotros*/
-@media (min-width: 1035px) {
-  .about-us {
-    padding-top: 5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+.about-us {
+  padding-top: 5rem;
 }
 
-@media (max-width: 1035px) {
+@media (min-width: 1035px) {
   .about-us {
-    padding-top: 5rem;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -213,6 +208,16 @@ img {
   background-size: cover;
   width: 100%;
   object-fit: cover;
+}
+
+@media (min-width: 1920px) {
+  .about-us div {
+    max-height: 40rem;
+    padding: 4rem;
+  }
+  .about-us img {
+    max-height: 40rem;
+  }
 }
 
 /*Productos*/
