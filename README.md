@@ -1,2 +1,4 @@
 # E-Commerce
-Furniture e-commerce with HTML and CSS
+ECommerce con HTML y CSS
+
+Web desplegada: https://martinezfabian.github.io/ECommerce/
