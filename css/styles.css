@@ -210,7 +210,7 @@ img {
   object-fit: cover;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1400px) {
   .about-us div {
     max-height: 40rem;
     padding: 4rem;
